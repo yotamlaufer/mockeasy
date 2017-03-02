@@ -1,0 +1,39 @@
+{
+  "name": "mockeasy",
+  "version": "0.0.0",
+  "description": "A useful mocking library",
+  "private": false,
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive test/ --reporter spec-xunit-file"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yotamlaufer/mockeasy.git"
+  },
+  "keywords": [
+    "Tests",
+    "Integration",
+    "Framework",
+    "Mock",
+    "Stub"
+  ],
+  "author": "Elad & Yotam Laufer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yotamlaufer/mockeasy/issues"
+  },
+  "homepage": "https://github.com/yotamlaufer/mockeasy",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "spec-xunit-file": "0.0.1-3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "underscore": "^1.8.3"
+  }
+}
