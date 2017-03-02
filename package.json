@@ -1,6 +1,6 @@
 {
   "name": "mockeasy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A useful mocking library",
   "private": false,
   "main": "index.js",
