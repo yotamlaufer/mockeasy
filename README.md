@@ -10,8 +10,8 @@ Example
 
 ```js
 // math.js
-exports.increment = function(value, callback) {
-  callback(null, value++);
+exports.increment = function(value) {
+  return value++;
 }
 ```
 
@@ -20,8 +20,8 @@ exports.increment = function(value, callback) {
 const mockeasy = require('mockeasy');
 const mockedMath = mockeasy.stub(require('./math'));
 
-mockedMath.increment.one(function(value, callback) {
-  callback(null, 100);
+mockedMath.increment.once(function(value) {
+  return 100;
 });
 
 console.log(mockedMath.increment());
