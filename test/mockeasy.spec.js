@@ -130,7 +130,7 @@ describe('mockeasy - Mock by path', function() {
       return 100;
     });
 
-    mockedTargetModule.resetAllMocks();
+    mockeasy.reset(mockedTargetModule);
 
     chai.assert.throws(mockedTargetModule.isStub, new MockEasyError(MockEasyError.NOT_DEFINED, 'mock-me', 'isStub').message);
     chai.assert.throws(mockedTargetModule.getString, new MockEasyError(MockEasyError.NOT_DEFINED, 'mock-me', 'getString').message);
